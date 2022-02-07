@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "fastlane-test",
+    "slug": "fastlane-test",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "fastlane-test"
+}
