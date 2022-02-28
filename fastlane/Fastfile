@@ -41,12 +41,12 @@ platform :android do
  
  desc "Submit a new Beta Build Playstore"
  lane :beta do
-   gradle(task: "clean assembleRelease")
-   firebase
- end
+    gradle(task: 'assemble', build_type: 'Release')
+    upload_to_play_store(track: 'beta')
+  end
  
  desc "Deploy a new version to the Google Play"
  lane :deploy do
-   gradle(task: "clean assembleRelease")
+   gradle(task: "clean app:assembleRelease")
    upload_to_play_store
  end

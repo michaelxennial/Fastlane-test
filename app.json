@@ -5,7 +5,13 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.fastlanetest.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.fastlanetest.app"
+    }
   },
   "name": "fastlane-test"
 }
